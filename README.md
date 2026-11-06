@@ -8,21 +8,21 @@ The project aims to formalize the existence theorem of the preprint, starting wi
 
 ## The singular Yamabe equation on the round three-sphere with two prescribed points
 
-**Theorem.** Let $g$ be the unit round metric on $S^3$. For any two distinct points $p,q\in S^3$, there exists a smooth positive function $u$ on $S^3\setminus\{p,q\}$ such that $u^4g$ is complete and has constant scalar curvature $6$. With $\Delta_g=\operatorname{div}_g\nabla_g$, the function $u$ satisfies
+**Theorem.** Let $g$ be the unit round metric on $S^3$. For any two distinct points $p,q\in S^3$, there exists a smooth positive function $u$ on $`S^3\setminus\{p,q\}`$ such that $u^4g$ is complete and has constant scalar curvature $6$. With $\Delta_g$ defined as the divergence of the gradient, the function $u$ satisfies
 
-$$
+```math
 -8\Delta_g u+6u=6u^5\qquad\text{on }S^3\setminus\{p,q\}.
-$$
+```
 
 The Lean theorem also records that the intrinsic distance between any two points is finite and that every initial position and velocity admits a smooth geodesic defined on all of $\mathbb R$.
 
-The Lean proof constructs the cylindrical solution $v(x)=3^{-1/4}|x|^{-1/2}$ on $\mathbb R^3\setminus\{0\}$. It pulls back the metric $v^4g_{\mathrm{Eucl}}$ by stereographic projection from $p$ followed by the translation that sends the image of $q$ to the origin. In cylindrical coordinates, the conformal factor is the constant member of the Fowler family. [Korevaar, Mazzeo, Pacard, and Schoen, *Refined asymptotics for constant scalar curvature metrics with isolated singularities* (1999), §2](https://perso.pages.math.cnrs.fr/users/frank.pacard/Publications/25.pdf#page=5)
+The Lean proof constructs the cylindrical solution $v(x)=3^{-1/4}|x|^{-1/2}$ on $`\mathbb R^3\setminus\{0\}`$. It pulls back the metric $v^4g_{\mathrm{Eucl}}$ by stereographic projection from $p$ followed by the translation that sends the image of $q$ to the origin. In cylindrical coordinates, the conformal factor is the constant member of the Fowler family. [Korevaar, Mazzeo, Pacard, and Schoen, *Refined asymptotics for constant scalar curvature metrics with isolated singularities* (1999), §2](https://perso.pages.math.cnrs.fr/users/frank.pacard/Publications/25.pdf#page=5)
 
 Mazzeo and Pacard's Theorem 1 gives a gluing construction on the round sphere for prescribed finite singular sets of at least two points. They credit Schoen with the earlier construction. [Schoen, *The existence of weak solutions with prescribed singular behavior for a conformally invariant scalar equation* (1988)](https://doi.org/10.1002/cpa.3160410305) · [Mazzeo and Pacard, *Constant scalar curvature metrics with isolated singularities* (1999), Theorem 1](https://perso.pages.math.cnrs.fr/users/frank.pacard/Publications/26.pdf#page=2)
 
 The formalized existence theorem covers sets of exactly two points. A separate transport theorem applies to any finite set $\Lambda$ and any smooth conformal diffeomorphism $F\colon M\to N$ of three-manifolds. If $N\setminus F(\Lambda)$ already carries a complete singular Yamabe metric of scalar curvature $6$ with finite intrinsic distances and a global smooth geodesic for every initial position and velocity, the theorem pulls it back to $M\setminus\Lambda$ with the same properties.
 
-The completeness argument also yields a criterion for general conformal factors on $\mathbb R^3\setminus\{0\}$. If a smooth positive function $u$ satisfies $u(x)^2\ge c/|x|$ everywhere for some $c>0$, then $u^4g_{\mathrm{Eucl}}$ is complete.
+The completeness argument also yields a criterion for general conformal factors on $`\mathbb R^3\setminus\{0\}`$. If a smooth positive function $u$ satisfies $u(x)^2\ge c/|x|$ everywhere for some $c>0$, then $u^4g_{\mathrm{Eucl}}$ is complete.
 
 | Result | Lean declaration |
 | --- | --- |
