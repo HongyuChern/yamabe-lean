@@ -1,0 +1,12 @@
+Recorded Comparator result for the round three-sphere theorem
+
+Completed 2026-11-06T15:29:11Z on Ubuntu 24.04.4 LTS (arm64), Linux 6.8.0-106-generic, Lean 4.33.1.
+Target Yamabe3.ComparatorTargets.roundSphereTwoPoints
+Proof Yamabe3.W6.round_card_two_conclusion
+Permitted axioms propext, Classical.choice, Quot.sound
+
+Nanoda kernel accepts the solution
+Lean default kernel accepts the solution
+Your solution is okay!
+Finished with result: success
+Main processes terminated with: code=exited/status=0

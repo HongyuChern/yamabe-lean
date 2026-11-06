@@ -1,0 +1,15 @@
+import Yamabe3
+
+#check Yamabe3.W6.round_card_two_conclusion
+#check Yamabe3.W6.conformal_round_card_two_conclusion
+#check Yamabe3.Analysis.GreenParametrix.full_smooth_test_green_family
+#check Yamabe3.Analysis.GreenParametrix.exists_native_green_with_C2_expansion
+#check Yamabe3.Target.puncturedConclusion_of_cylindrical_solution
+#check Yamabe3.Analysis.SpherePolar.exists_nativeOriginal_scoped_linear_full_closure
+
+#print axioms Yamabe3.W6.round_card_two_conclusion
+#print axioms Yamabe3.W6.conformal_round_card_two_conclusion
+#print axioms Yamabe3.Analysis.GreenParametrix.full_smooth_test_green_family
+#print axioms Yamabe3.Analysis.GreenParametrix.exists_native_green_with_C2_expansion
+#print axioms Yamabe3.Target.puncturedConclusion_of_cylindrical_solution
+#print axioms Yamabe3.Analysis.SpherePolar.exists_nativeOriginal_scoped_linear_full_closure
